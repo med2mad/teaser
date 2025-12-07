@@ -6,7 +6,7 @@
         { img: "s-6.jpg", title: "شقق سكنية", text: x },
         { img: "s-4.jpg", title: "سكن إقتصادي", text: x },
         { img: "s-5.jpg", title: "شقق سكنية", text: x },
-        { img: "s-5.jpg", title: "منازل فاخرة", text: x },
+        { img: "s-2.jpg", title: "منازل فاخرة", text: x },
     ];
 
     // { img: "s-4.jpg", title: "شقق سكنية", text: x },
@@ -27,37 +27,43 @@
 <section class="find_section">
     <div class="container">
         <form action="">
-            <div class="form-row" style="align-items: flex-end">
+            <div class="form-row">
                 <div class="col-md-3">
-                    <label for="searchplace">المكان</label>
-                    <select id="searchplace" class="form-control">
-                        <option>--</option>
-                        <option>وسط المدينة</option>
-                        <option>الألفة</option>
-                        <option>الحي الحسني</option>
-                        <option>سيدي معروف</option>
-                        <option>ليساسفة</option>
-                        <option>الرحمة</option>
-                    </select>
+                    <div>
+                        <label for="searchplace">المكان</label>
+                        <select id="searchplace" class="form-control">
+                            <option>--</option>
+                            <option>وسط المدينة</option>
+                            <option>الألفة</option>
+                            <option>الحي الحسني</option>
+                            <option>سيدي معروف</option>
+                            <option>ليساسفة</option>
+                            <option>الرحمة</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <label for="searchtype">النوع</label>
-                    <select id="searchtype" class="form-control">
-                        <option>--</option>
-                        <option>شقة</option>
-                        <option>عمارة</option>
-                        <option>فيلا</option>
-                    </select>
+                    <div>
+                        <label for="searchtype">النوع</label>
+                        <select id="searchtype" class="form-control">
+                            <option>--</option>
+                            <option>شقة</option>
+                            <option>عمارة</option>
+                            <option>فيلا</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <label for="searchcontract">العقد</label>
-                    <select id="searchcontract" class="form-control">
-                        <option>--</option>
-                        <option>الكراء</option>
-                        <option>الشراء</option>
-                    </select>
+                    <div>
+                        <label for="searchcontract">العقد</label>
+                        <select id="searchcontract" class="form-control">
+                            <option>--</option>
+                            <option>الكراء</option>
+                            <option>الشراء</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <button type="submit" class=""> search </button>
                 </div>
             </div>
@@ -100,6 +106,12 @@
         transform: translateY(-50%);
     }
 
+    .form-row {
+        align-items: flex-end;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
     .find_section form {
         padding: 10px 45px;
         -webkit-box-shadow: 0px 0px 20px 11px rgba(0, 0, 0, 0.09);
@@ -132,13 +144,19 @@
         text-align: center;
     }
     .col-md-3 select,
-    .col-md-3 button {
+    .col-md-2 button {
         margin: 0 !important;
     }
     .col-md-3 label {
         color: #0f2480;
         font-weight: bold;
         font-size: 1.2rem;
+    }
+
+    .col-md-3 div {
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
 
     .sale_section .sale_container {

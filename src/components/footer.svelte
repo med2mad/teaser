@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- 
             <div class="col-md-3">
                 <div class="info_info">
                     <h5>معلومات أخرى</h5>
@@ -77,7 +77,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -157,10 +157,9 @@
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
         gap: 20px;
-        align-items: center;
+        align-items: center; */
     }
 
     .info_section .info_social .social_box a {

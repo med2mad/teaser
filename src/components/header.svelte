@@ -26,7 +26,8 @@
                     <div class="detail-box">
                         <h1 style="text-align: center;">
                             <span> إبحث عن</span> <br />
-                            شقة مستقبلك
+                            شقة<br />
+                            مستقبلك
                         </h1>
                     </div>
                 </div>
@@ -106,6 +107,7 @@
         color: #3554d1;
         font-weight: bold;
         font-size: 4rem;
+        text-shadow: #ffffff 11px -4px 7px;
     }
 
     .slider_section .detail-box h1 span {

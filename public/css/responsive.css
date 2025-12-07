@@ -13,7 +13,7 @@
 
   .sale_section .sale_container .box {
     -ms-flex-preferred-size: 98%;
-    flex-basis: 98%;
+    /* flex-basis: 98%; */
     margin: 1%;
 
   }
@@ -24,8 +24,12 @@
     background: none;
     background-color: #e9eefc;
     height: auto;
+    margin-bottom: 10px;
   }
 
+  .find_section {
+    display: none !important;
+  }
 
   .custom_menu-btn button span {
     background-color: #0f2480;
